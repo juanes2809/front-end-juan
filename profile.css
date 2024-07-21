@@ -1,0 +1,236 @@
+body {
+    font-family: Work Sans;
+    background-color: #f0f0f0;
+}
+
+
+h1{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+button{
+    font-family: Work Sans;
+    font-size: 20px;
+}
+
+p{
+    font-family: Roboto;
+font-size: 24px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 150px;
+}
+
+header {
+    background-color: #009688;
+    padding: 20px 0; /* Espaciado interno para separar el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra para resaltar */
+    width: 95%;
+    height: 45px;
+    margin-left: 35px;
+}
+
+header h1{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 40px; /* Tamaño del texto */
+    margin: 0;
+}
+
+.message{
+    font-style: italic;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 90%; /* Increased width */
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.candidate-name{
+    padding-left: 15px;
+    margin:0;
+}
+.candidate-name h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #009688;
+}
+/* Estilos para ocultar los bordes de la tabla */
+table {
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+    padding: 5px;
+    border: none; /* Elimina los bordes de las celdas */
+     /* Opcional: establece el peso de la fuente en negrita */
+}
+.candidate-info p{
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.box-section {
+    padding: 15px;
+    padding-top: 0px;
+    gap: 10px;
+    flex: 1;
+}
+.box{
+    background: #e9e9e932;
+    min-height: 200px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.inline-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #009688;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+.box.candidate-history p {
+    display: inline-block;
+    margin: 3px;
+}
+
+.long{
+    background-color:  #e9e9e932;;
+
+}
+button:hover {
+    background-color: #005c53;
+}
+
+.chatsection{
+    background: rgba(0, 150, 136, 0.20);
+    width: 90%; /* Increased width */
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-open{
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #000000;
+    font-weight: bold;
+    font-family: Work Sans;
+    font-size: 20px;
+}
+
+.button-open:hover {
+    color: #000000;
+    background-color: rgba(0, 150, 136, 0.20);
+    border-color: rgba(0, 150, 136, 0.20);
+}
+
+
+
+     /* Overlay to cover the background when the dialog is open */
+     .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styles for the dialog box */
+    .dialog-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        min-width: 1000px;
+        max-width: 1000px;
+        overflow: scroll;
+        max-height: 600px;
+    }
+
+    /* Style for the close button */
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+
+
+/* DIALOG BOXES*/
+.contract-details{
+
+}
+
+.highlight_contract{
+    background-color: rgba(255, 174, 0, 0.229);
+}

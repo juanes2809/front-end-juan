@@ -1,0 +1,33 @@
+body {
+    font-family: Work Sans;
+    background-color: #f0f0f0;
+}
+
+
+h1{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/* Header style */
+.header {
+    background: rgba(0, 150, 136, 0.20);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Title style */
+.header_text {
+    font-size: 32px;
+    margin: 0;
+}

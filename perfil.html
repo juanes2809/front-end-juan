@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Work+Sans:ital,wght@0,500;0,800;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@300&family=Work+Sans:ital,wght@0,500;0,800;1,200&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Candidate Profile</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 id="titulo">Radiografía electoral Colombia</h1>
+        </div>
+    </header>
+    <main>
+    <div class="card">
+        <div class="candidate-name">
+            <h1 id="nombre_candidato">Cargando nombre del candidato...</h1>
+        </div>
+        <div style="padding-left: 10px;">
+            <table >
+                <tr>
+                    <td style="width: 150px; font-weight: bold;">Departamento:</td>
+                    <td id="tbDepartamento">Nombre del Departamento</td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; font-weight: bold;">Cargo:</td>
+                    <td id="tbCargo">Nombre del Cargo</td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; font-weight: bold;">Municipio:</td>
+                    <td id="tbMunicipio">Nombre del Municipio</td>
+                </tr>
+                <tr>
+                    <td style="width: 150px; font-weight: bold;">Partido Político:</td>
+                    <td id="tbPartido">Nombre del Partido</td>
+                </tr>
+            </table>
+        </div>
+<!--         <div class="candidate-info">
+            <p>Santander - Asamblea - Municipio
+                Partido o movimiento político - Partido centro democrático</p>
+        </div> -->
+        
+        <div class="cards-wrapper">
+            <div class="box-section">
+                <h3>HISTORIAL</h3>
+                <section class="box candidate-history">
+                    <p class="message">Candidaturas previas de este candidato:</p>
+                    <!-- <button>Ver detalle</button> -->
+                </section>
+            </div>
+
+            <div class="box-section">
+                <h3>CONTRATOS</h3>
+                <section class="box candidate-contracts">
+                    <div>
+                        <p style="text-align: left;">Contratos en año de elecciones:</p>
+                        <button class="button-open" id="open-contratos-elecciones" style="display: block; margin: 0 auto;">Cargando...</button>
+                    </div>
+                    <div>
+                        <p style="text-align: left;">Contratos simultáneos:</p>
+                        <button class="button-open" id="open-contratos-simultaneos" style="display: block; margin: 0 auto;">Cargando...</button>
+                    </div>
+                    <button class="button"  id="open-contratos-entidades" style="display: block; margin: 0 auto;">Consultar contratos por entidades</button>
+                </section>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="box-section chatsection">                
+        <div class="inline-info"><h3>NOTICIAS</h3>
+            <p class="message">lo que el internet sabe sobre este candidato</p>
+        </div> 
+        <section class="box long">
+            <p class="message">Recopilamos algunas noticias sobre el candidato y esto es lo que sabemos:</p>
+            <div class="loading-icon">
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <p class="loading-text">Navegando la web</p>
+            </div>
+            <p class="message response" style="display: none;">Respuesta</p>
+        </section>
+        <button class="button" id="open-fuentes" style="display: block; margin: 0 auto;">Consultar fuente</button>
+
+    </div>
+</main>
+
+
+<div class="overlay" id="overlay"></div>
+<div class="dialog-box" id="dialog-box">
+    <span class="close-button" id="close-button">X</span>
+    <!-- Content goes here -->
+    <p id="dialog-space">This is the information stored in a variable. It can be any text or data you want to display.</p>
+</div>
+
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+# Datos de ejemplo para diferentes años
+data = {
+    "2000": {
+        "Bogotá": 10,
+        "Antioquia": 20,
+        "Valle del Cauca": 30
+    },
+    "2010": {
+        "Bogotá": 15,
+        "Antioquia": 25,
+        "Valle del Cauca": 35
+    },
+    "2020": {
+        "Bogotá": 20,
+        "Antioquia": 30,
+        "Valle del Cauca": 40
+    }
+}
+
+@app.route('/api/valores', methods=['GET'])
+def get_values():
+    year = request.args.get('year')
+    if year in data:
+        return jsonify(data[year])
+    else:
+        return jsonify({})
+
+if __name__ == '__main__':
+    app.run(debug=True)
